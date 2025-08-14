@@ -1,0 +1,15 @@
+server:
+  port: 8080
+
+spring:
+  data:
+    mongodb:
+      uri: ${MONGODB_URI:mongodb://localhost:27017/rfid_attendance}
+
+firebase:
+  databaseUrl: https://<your-project-id>.firebaseio.com
+  serviceAccount: classpath:firebase-admin-key.json
+
+# Dev CORS (allow Vite dev server)
+cors:
+  allowed-origins: "http://localhost:5173"
